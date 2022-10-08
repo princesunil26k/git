@@ -1,0 +1,4 @@
+to delete empty lines from file
+grep -v '^$' file.txt
+sed '/^$/d' file.txt
+awk '{if(NF>0)' {print $0}}' file.txt
